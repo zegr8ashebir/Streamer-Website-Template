@@ -20,7 +20,7 @@ export default function(): JSX.Element
 {
     return (<footer className="flex flex-col items-center tertiary p-8 gap-8">
         <div className="flex gap-8">
-            <List
+            {/* <List
                 defVal={[
                     <Link iStyle="font-bold hover:underline" defVal="Twitter" to="https://twitter.com/AssoElkir" linkEditable/>,
                     <Link iStyle="font-bold hover:underline" defVal="Facebook" to="https://www.facebook.com/AssoElkir/" linkEditable/>,
@@ -31,7 +31,7 @@ export default function(): JSX.Element
                 ]}
                 defEl={<Link iStyle="font-bold hover:underline" defVal="Nouveau lien" to="https://elkir.fr" linkEditable/>}
                 style="gap-8 flex" bottomToolTip
-            />
+            /> */}
         </div>
         
         <hr className="border-zinc-800/50 w-1/2"/>

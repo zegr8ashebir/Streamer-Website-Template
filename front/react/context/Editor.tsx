@@ -15,13 +15,23 @@ import React, { createContext, useContext } from "react";
 
 var editor =
 {
+    header:
+    {
+        home: ["Accueil", ""],
+        planning: ["Mon planning", "planning"],
+        setup: ["Mon set-up", "setup"],
+        advantages: ["Avantages subs", "advantages"],
+        contact: ["Contact", "contact"],
+        watchme: ["Regarde-moi!", "watchme"]
+    },
     home:
     {
         pseudonym: "Pseudonyme",
         note: "Surnom ou note",
         title: "Qui suis-je?",
         description_1: "Salut à toutes et à tous! Je suis un.e Streamer.euse et partenaire d'Elkir, venez visiter ma chaîne, la bonne entente et l'amusement y règnent!",
-        description_2: "Ainsi, je suis quelqu'un qui aime les pizzas à l'ananas et les compétitions de lancer de thon, si tu n'est pas d'accord avec moi, viens en débattre sur ma chaîne! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis a metus et facilisis. Donec turpis libero, congue in scelerisque at, tempus sit amet arcu. Aenean varius faucibus neque et tincidunt. Integer vestibulum elit tortor, sed consequat metus sodales quis. Integer placerat imperdiet sollicitudin. Maecenas interdum dui a erat suscipit, porttitor bibendum sapien sodales. Integer eget purus condimentum tortor fringilla gravida."
+        description_2: "Ainsi, je suis quelqu'un qui aime les pizzas à l'ananas et les compétitions de lancer de thon, si tu n'est pas d'accord avec moi, viens en débattre sur ma chaîne! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis a metus et facilisis. Donec turpis libero, congue in scelerisque at, tempus sit amet arcu. Aenean varius faucibus neque et tincidunt. Integer vestibulum elit tortor, sed consequat metus sodales quis. Integer placerat imperdiet sollicitudin. Maecenas interdum dui a erat suscipit, porttitor bibendum sapien sodales. Integer eget purus condimentum tortor fringilla gravida.",
+        watchme_link: ["Regarde-moi!", "watchme"]
     },
     planning:
     {
@@ -48,6 +58,10 @@ var editor =
         title: "Stream en cours...",
         channel: "associationelkir",
         description: "Selon une étude scientifique, regarder mes streams rendrait deux fois plus intelligent! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis ipsum augue, eu tincidunt tellus varius vitae. Curabitur porta justo gravida, elementum turpis quis, porta purus."
+    },
+    footer:
+    {
+
     }
 };
 

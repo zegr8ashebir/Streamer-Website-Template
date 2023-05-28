@@ -52,7 +52,7 @@ export default function(): JSX.Element
                     iStyle="text-xl text-justify"
                 />
                 <Link
-                    defVal="Regarde-moi!" to="watchme"
+                    page="home" tag="watchme_link"
                     iStyle="hidden 2xl:block w-48 px-6 py-3 text-left font-bold text-white accentuation rounded-xl shadow shadow-black/50"
                 />
             </div>

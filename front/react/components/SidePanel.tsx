@@ -17,7 +17,7 @@ export default function(): JSX.Element
 {
     const [dark, setDark] = useState(false);
 
-    return (<aside className={`z-10 side-panel ${dark ? "bg-zinc-950" : "bg-zinc-200"} top-1/2 fixed flex flex-col w-80 right-0 p-8 rounded-l-xl shadow-lg shadow-black/50`}>
+    return (<aside className={`z-10 side-panel ${dark ? "bg-zinc-950" : "bg-zinc-200"} top-1/2 fixed flex flex-col gap-2 w-80 right-0 p-8 rounded-l-xl shadow-lg shadow-black/50`}>
         <div className="flex justify-end items-center gap-2">
             <label>Couleur primaire</label>
             <input type="color" defaultValue="#fafafa" onChange={e => document.body.style.setProperty("--primary-color", e.target.value)}/>
