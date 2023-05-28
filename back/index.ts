@@ -30,7 +30,6 @@ router.get("/", (req, res) => res.sendFile(path.join(__dirname, "../../src/front
 
 // Demander l'application (i.e. react)
 router.get("/bundle", (req, res) => res.sendFile(path.join(__dirname, "../../dist/bundle.js")));
-router.get("/script", (req, res) => res.sendFile(path.join(__dirname, "../../dist/script.js")));
 
 // Demander le style (i.e. tailwind + ? sass)
 router.get("/style", (req, res) => res.sendFile(path.join(__dirname, "../../dist/style.css")));
