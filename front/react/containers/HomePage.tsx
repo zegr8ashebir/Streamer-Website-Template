@@ -58,7 +58,7 @@ export default function(): JSX.Element
             </div>
             <div className="flex items-center w-1/2 2xl:w-1/3">
                 <Image
-                    defVal="https://cdn.elkir.fr/assets/img/avatars/img-profil-base.jpg"
+                    page="home" tag="photo"
                     cStyle="w-full"
                     iStyle="aspect-square rounded-2xl shadow-md shadow-black/50"
                 />

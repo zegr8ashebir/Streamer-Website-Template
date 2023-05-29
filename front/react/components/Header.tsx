@@ -22,7 +22,7 @@ export default function(): JSX.Element
 
     return (<header className="fixed top-0 flex px-12 py-3 w-full z-10 secondary shadow shadow-black/50">
         <Image 
-            defVal="https://cdn.elkir.fr/assets/img/avatars/img-benevole.jpg"
+            page="header" tag="logo"
             cStyle="hidden lg:block w-12 mr-8"
             iStyle="aspect-square rounded-xl shadow shadow-black/50"    
             bottomToolTip

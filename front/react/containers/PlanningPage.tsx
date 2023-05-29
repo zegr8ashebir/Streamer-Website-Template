@@ -27,7 +27,7 @@ export default function(): JSX.Element
             iStyle="font-poppins text-center text-4xl lg:text-5xl xl:text-6xl"
         />
         <Image
-            defVal="https://pbs.twimg.com/media/FdW9W41WAAQPBN5?format=jpg&name=large"
+            page="planning" tag="planning"
             cStyle="w-3/4 xl:w-1/2"
             iStyle="rounded-2xl aspect-video shadow-md shadow-black/50"
         />

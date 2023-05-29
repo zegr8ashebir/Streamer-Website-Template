@@ -6,6 +6,7 @@
 import React, { useState } from "react";
 // Local
 import BaseInput from "./BaseInput";
+import { useEditor } from "@context/Editor";
 
 //----------------------------------------------------------------
 //#endregion
@@ -15,18 +16,27 @@ import BaseInput from "./BaseInput";
 //#region Exportations
 //----------------------------------------------------------------
 
-export default function({ bottomToolTip = false, cStyle = "", iStyle = "", defVal }): JSX.Element
+export default function({ page, tag, bottomToolTip = false, cStyle = "", iStyle = "" }): JSX.Element
 {
-    const [image, setImage] = useState(defVal);
+    const { editor } = useEditor();
     
     return (<BaseInput bottomToolTip={bottomToolTip} icon="image" type="Image" style={cStyle}>
-        <img
-            onClick={() => {
-                const img = window.prompt("URL de l'image", defVal);
-                if (img) setImage(img);
+        <input
+            style={{ backgroundImage: `url("./uploads/${editor[page][tag]}.webp")`}}
+            type="file"
+            onChange={({ target }) =>
+            {
+                if (target.files)
+                {
+                    const body = new FormData();
+                    body.append("image_file", target.files[0]);
+                    body.append("image_tag", tag);
+
+                    fetch("./php/upload.php", { method: "POST", body })
+                        .then(async (response) => alert(await response.json()));
+                }
             }}
-            src={image}
-            className={`w-full object-cover ${iStyle}`}
+            className={`w-full bg-cover bg-center ${iStyle}`}
         />
     </BaseInput>);
 }

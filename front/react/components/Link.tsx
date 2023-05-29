@@ -45,7 +45,7 @@ export default function({ page, tag, bottomToolTip = false, cStyle = "",  iStyle
         }}>
         <button onClick={() =>
         {
-            if (!linkEditable) location.href = `/#/${url}`;
+            if (!linkEditable) location.href = `./#/${url}`;
             else window.open(url, "_blank")?.focus();
         }} className={iStyle}>
             {text}
